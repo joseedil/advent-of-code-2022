@@ -26,14 +26,22 @@ source-repository head
 library
   exposed-modules:
       AoC.Day01.Puzzle01
+      AoC.Day02.Puzzle02
+      AoC.Day03.Puzzle03
+      AoC.Day04.Puzzle04
+      AoC.Day05.Puzzle05
       Lib
   other-modules:
       Paths_advent_of_code_year2022
   hs-source-dirs:
       src
+  default-extensions:
+      OverloadedStrings
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , text
+    , vector
   default-language: Haskell2010
 
 executable advent-of-code-year2022-exe
@@ -46,6 +54,8 @@ executable advent-of-code-year2022-exe
   build-depends:
       advent-of-code-year2022
     , base >=4.7 && <5
+    , text
+    , vector
   default-language: Haskell2010
 
 test-suite advent-of-code-year2022-test
@@ -59,4 +69,6 @@ test-suite advent-of-code-year2022-test
   build-depends:
       advent-of-code-year2022
     , base >=4.7 && <5
+    , text
+    , vector
   default-language: Haskell2010

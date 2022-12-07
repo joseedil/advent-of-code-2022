@@ -30,6 +30,7 @@ library
       AoC.Day03.Puzzle03
       AoC.Day04.Puzzle04
       AoC.Day05.Puzzle05
+      AoC.Day06.Puzzle06
       Lib
   other-modules:
       Paths_advent_of_code_year2022
@@ -37,7 +38,6 @@ library
       src
   default-extensions:
       OverloadedStrings
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
     , text
@@ -50,7 +50,7 @@ executable advent-of-code-year2022-exe
       Paths_advent_of_code_year2022
   hs-source-dirs:
       app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       advent-of-code-year2022
     , base >=4.7 && <5
@@ -65,7 +65,7 @@ test-suite advent-of-code-year2022-test
       Paths_advent_of_code_year2022
   hs-source-dirs:
       test
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       advent-of-code-year2022
     , base >=4.7 && <5

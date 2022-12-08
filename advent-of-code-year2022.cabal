@@ -31,6 +31,7 @@ library
       AoC.Day04.Puzzle04
       AoC.Day05.Puzzle05
       AoC.Day06.Puzzle06
+      AoC.Day08.Puzzle08
       Lib
   other-modules:
       Paths_advent_of_code_year2022
